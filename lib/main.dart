@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> {
         height: SizeConfig.height(50),
         decoration: BoxDecoration(
           border: Border.all(
-            color: Colors.grey[200],
+            color: Colors.blueAccent[700],
           ),
         ),
         child: Column(
@@ -37,13 +37,13 @@ class _MyAppState extends State<MyApp> {
                   children: [
                     Icon(
                       Icons.home,
-                      color: Colors.red,
+                      color: Colors.blueAccent[700],
                     ),
                     Text(
                       'Home',
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.red,
+                        color: Colors.black,
                       ),
                     )
                   ],
@@ -96,7 +96,7 @@ class _MyAppState extends State<MyApp> {
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.blueAccent[700],
       automaticallyImplyLeading: false,
       elevation: 0,
       title: CustomAppBar(
@@ -104,12 +104,12 @@ class _MyAppState extends State<MyApp> {
           Icons.search,
           color: Colors.black,
         ),
-        hintText: 'Search on Smakos',
+        hintText: 'Search....',
       ),
       actions: <Widget>[
         IconButton(
           icon: Icon(
-            Icons.shopping_cart_outlined,
+            Icons.phonelink_lock_sharp,
             size: 35,
           ),
           onPressed: () {
